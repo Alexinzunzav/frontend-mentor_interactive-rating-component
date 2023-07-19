@@ -1,0 +1,131 @@
+* {
+  border: solid 1px aqua;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  color: inherit;
+  border: none;
+}
+
+body {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr;
+  place-items: center;
+  background-color: hsl(216deg, 12%, 8%);
+}
+body .rating-card {
+  height: auto;
+  width: 22rem;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  background: linear-gradient(to bottom, hsl(213deg, 19%, 18%), hsl(215deg, 24%, 15%));
+  border-radius: 2rem;
+}
+body .rating-card .star {
+  width: 1rem;
+  padding: 1rem;
+  background-color: hsla(0deg, 0%, 100%, 0.05);
+  border-radius: 50%;
+}
+body .rating-card .text-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+body .rating-card .text-container .card-title {
+  color: hsl(0deg, 0%, 100%);
+  font-family: "Overpass", sans-serif;
+  font-size: 1.5rem;
+}
+body .rating-card .text-container .card-text {
+  font-size: 1rem;
+  font-family: "Overpass", sans-serif;
+  color: hsl(217deg, 12%, 63%);
+  font-size: 16px;
+  line-height: 1.5;
+}
+body .rating-card .rating {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+body .rating-card .rating .btn-score {
+  width: 3rem;
+  height: 3rem;
+  background-color: hsla(0deg, 0%, 100%, 0.05);
+  border-radius: 50%;
+  color: hsl(217deg, 12%, 63%);
+  font-family: "Overpass", sans-serif;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+body .rating-card .rating .btn-score:hover {
+  background-color: hsl(216deg, 12%, 54%);
+  color: hsl(0deg, 0%, 100%);
+  cursor: pointer;
+}
+body .rating-card .rating .btn-score:focus {
+  background-color: hsl(25deg, 97%, 53%);
+  cursor: pointer;
+  color: hsl(0deg, 0%, 100%);
+}
+body .rating-card .btn-submit {
+  background-color: hsl(25deg, 97%, 53%);
+  height: 2.75rem;
+  color: hsl(0deg, 0%, 100%);
+  font-family: "Overpass", sans-serif;
+  border-radius: 3rem;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+body .rating-card .btn-submit:hover {
+  background-color: hsl(0deg, 0%, 100%);
+  color: hsl(25deg, 97%, 53%);
+  cursor: pointer;
+}
+body .thankyou-card {
+  height: auto;
+  width: 22rem;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+  background: linear-gradient(to bottom, hsl(213deg, 19%, 18%), hsl(215deg, 24%, 15%));
+  border-radius: 2rem;
+}
+body .thankyou-card .img-submited {
+  height: auto;
+  width: 10rem;
+}
+body .thankyou-card .rating-chip {
+  font-size: 1rem;
+  font-family: "Overpass", sans-serif;
+  color: hsl(25deg, 97%, 53%);
+  font-size: 15px;
+  line-height: 1.5;
+  padding: 0.25rem 1rem;
+  border-radius: 1rem;
+  background-color: hsla(0deg, 0%, 100%, 0.05);
+}
+body .thankyou-card .text-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  align-items: center;
+}
+body .thankyou-card .text-container .card-title {
+  color: hsl(0deg, 0%, 100%);
+  font-family: "Overpass", sans-serif;
+  font-size: 1.5rem;
+}
+body .thankyou-card .text-container .card-text {
+  font-size: 1rem;
+  font-family: "Overpass", sans-serif;
+  color: hsl(217deg, 12%, 63%);
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: center;
+}/*# sourceMappingURL=style.css.map */

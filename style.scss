@@ -1,0 +1,177 @@
+//Colours
+$orange: hsl(25, 97%, 53%);
+$white: hsl(0, 0%, 100%);
+$white-background: hsla(0, 0%, 100%, 0.05);
+$lightGrey: hsl(217, 12%, 63%);
+$mediumGrey: hsl(216, 12%, 54%);
+$darkBlue: hsl(213, 19%, 18%);
+$intermediateDarkBlue: hsl(215, 24%, 15%);
+$veryDarkBlue: hsl(216, 12%, 8%);
+
+
+//Typography
+
+$Primary-font: 'Overpass', sans-serif;
+
+
+
+* {
+    border: solid 1px aqua;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    color: inherit;
+    border: none;
+}
+
+
+body {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr;
+    place-items: center;
+    background-color: $veryDarkBlue;
+    
+    .rating-card {
+        height: auto;
+        width: 22rem;
+        padding: 2rem;
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        background: linear-gradient(to bottom, $darkBlue, $intermediateDarkBlue);
+        border-radius: 2rem;
+      
+        .star {
+            width: 1rem;
+            padding: 1rem;
+            background-color: $white-background;
+            border-radius: 50%;
+        }
+    
+        .text-container {
+    
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+    
+            .card-title {
+                color: $white;
+                font-family: $Primary-font;
+                font-size: 1.5rem;
+            }
+    
+            .card-text {
+                font-size: 1rem;
+                font-family: $Primary-font;
+                color: $lightGrey;
+                font-size: 16px;
+                line-height: 1.5;
+            }
+        } 
+    
+        .rating {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+    
+            .btn-score {
+    
+                width: 3rem;
+                height: 3rem;
+                background-color: $white-background;
+                border-radius: 50%;
+                color: $lightGrey;
+                font-family: $Primary-font;
+                transition: background-color 0.3s ease, color 0.3s ease;
+               
+    
+                &:hover {
+                    background-color: $mediumGrey;
+                    color: $white;
+                    cursor: pointer;
+                }
+    
+                &:focus {
+                    background-color: $orange; 
+                    cursor: pointer;
+                    color: $white;
+                }              
+            }  
+            
+            
+        }
+    
+        .btn-submit {
+            background-color: $orange;
+            height: 2.75rem;
+            color: $white;
+            font-family: $Primary-font;
+            border-radius: 3rem;
+            transition: background-color 0.3s ease, color 0.3s ease;
+    
+            &:hover {
+                background-color: $white; 
+                color: $orange;
+                cursor: pointer;
+            }
+        }
+    
+    }
+
+    .thankyou-card {
+        height: auto;
+        width: 22rem;
+        padding: 2rem;
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        align-items: center;
+        background: linear-gradient(to bottom, $darkBlue, $intermediateDarkBlue);
+        border-radius: 2rem;
+        
+        .img-submited {
+            height: auto;
+            width: 10rem;
+        }
+
+        .rating-chip {
+            font-size: 1rem;
+            font-family: $Primary-font;
+            color: $orange;
+            font-size: 15px;
+            line-height: 1.5;
+            padding: 0.25rem 1rem;
+            border-radius: 1rem;
+            background-color: $white-background;
+        }
+
+        .text-container {
+    
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+            align-items: center;
+    
+            .card-title {
+                color: $white;
+                font-family: $Primary-font;
+                font-size: 1.5rem;
+            }
+    
+            .card-text {
+                font-size: 1rem;
+                font-family: $Primary-font;
+                color: $lightGrey;
+                font-size: 16px;
+                line-height: 1.5;
+                text-align: center;
+            }
+        } 
+    }
+
+
+
+}
+
